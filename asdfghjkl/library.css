@@ -1,0 +1,97 @@
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading */
+h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px; /* Increase font size for better visibility */
+}
+#md{
+    margin-top:50px;
+}
+/* Home Button Styling */
+.home-button-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.home-button {
+    background-color: #3e3e3e;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #5e5e5e;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Section Wrapper */
+.section {
+    margin-bottom: 40px;
+}
+
+/* Library Grid */
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+/* Library Item */
+.library-item {
+    background-color: #181818;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+}
+
+.library-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Add a shadow for emphasis */
+}
+
+.library-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.library-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.library-item span {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 18px; /* Adjust heading size for smaller screens */
+    }
+
+    .library-item img {
+        height: 130px; /* Reduce image height on smaller screens */
+    }
+}

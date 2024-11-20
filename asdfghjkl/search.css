@@ -1,0 +1,69 @@
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+/* Centered Search Bar Styling */
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #282828;
+    color: #fff;
+    outline: none;
+}
+
+.search-bar::placeholder {
+    color: #b3b3b3;
+}
+
+.search-bar:focus + .clear-button,
+.search-bar:not(:placeholder-shown) + .clear-button {
+    display: inline;
+}
+
+/* Photo Grid Styling */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six columns for each row */
+    gap: 15px;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 20px;
+
+}
+
+.photo-item {
+    background-color: #282828;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures images stay within rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width:300px;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
